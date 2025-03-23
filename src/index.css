@@ -10,6 +10,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+ 
 }
 
 :root {
@@ -26,6 +27,11 @@
 
  
 }
+.div-1{
+  margin-left:50px;
+ 
+}
+
 .bg-primary{
   background-color: var(--primary);
 }

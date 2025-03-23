@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 // import EarthCanvas from "./canvas/Earth";
 // import BallCanvas from "./canvas/Ball";
@@ -20,11 +21,12 @@ import {BrowserRouter} from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative flex-col items-center justify-center z-0 bg-primary'>
-        <div className=' bg-custom bg-cover bg-no-repeat bg-center'>
+      <div className=' relative flex-col items-center justify-center z-0 bg-primary'>
+        <div className='bg-custom bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
         </div>
+        
         <About /> 
         <Experience /> 
        <Tech />
