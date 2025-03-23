@@ -32,7 +32,7 @@ const Stars = ({ position = [1, 1, 0], ...props }) => {
     // Animação de rotação das estrelas na diagonal da direita para a esquerda
     if (ref.current) {
       // A rotação está agora ocorrendo em torno de dois eixos (X e Y) simultaneamente para dar o efeito de rotação diagonal
-      ref.current.rotation.x += delta / 20; // Ajuste a velocidade conforme necessário
+      ref.current.rotation.x += delta / -10; // Ajuste a velocidade conforme necessário
       ref.current.rotation.y -= delta / 20; // Ajuste a direção da rotação (direita para a esquerda)
     }
   });
@@ -43,7 +43,7 @@ const Stars = ({ position = [1, 1, 0], ...props }) => {
         <pointsMaterial
           transparent
           color="#ffffff" // Cor das estrelas
-          size={0.004} // Tamanho menor das estrelas (anteriormente estava 0.01)
+          size={0.002} // Tamanho menor das estrelas (anteriormente estava 0.01)
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -56,7 +56,7 @@ const Stars = ({ position = [1, 1, 0], ...props }) => {
 const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 0] }}>
         <Suspense fallback={null}>
           <Stars position={[1, 0, 0]} /> {/* Defina a posição das estrelas */}
         </Suspense>
