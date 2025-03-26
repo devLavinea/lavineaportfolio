@@ -114,7 +114,7 @@ const Services = () => {
           >
             <div className='h-full flex flex-col justify-around'>
             <h3 className='text-[20px] font-semibold'>{card.title}</h3>
-            <p className='text-[18px] md:text-[20px] text-[#dfd9ff]'>{card.description}</p>
+            <p className='text-[18px] md:text-[19px] text-[#dfd9ff]'>{card.description}</p>
             <button className="div-3 btn-default">{card.buttonText}</button>
             </div>
           </motion.div>
