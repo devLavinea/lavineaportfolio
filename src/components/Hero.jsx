@@ -1,35 +1,20 @@
 import { motion } from "framer-motion";
 import React from 'react';
-import { styles } from "../styles";
+
 import { ComputersCanvas } from "../canvas";
 
 const Hero = () => {
   return (
-    <section className={` relative w-full h-screen mx-auto flex justify-end`}>
-      <div
-        className={`div-1 absolute inset-0 top-[120px]  max-w-7xl mx-auto  flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+    <section className={` relative w-full lg:h-[100vh]  h-[55vh] flex justify-center items-center`}>
+    <div className=" w-[650px] h-[500px] bg-custom1 opacity-5 rounded-full filter blur-xl absolute bottom-0  "></div>
 
-        <div >
-          <h1 className={`${styles.heroHeadText} `}>
-            Olá, Eu sou <span className='text-[#915EFF]'>Lavinea Souza</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          Desenvolvedora Front-End e Web Designer, <br className='sm:block hidden' />
-          apaixonada por criar experiências digitais.
-          </p>
-        </div>
-      </div>
+    
 
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+      <div className='hidden lg:flex absolute xs:bottom-10 bottom-32 w-full  justify-center items-center'>
+        <a href='#work'>
+          <div className='w-[25px] h-[54px]  rounded-3xl border-3 border-gray-500 flex justify-center items-start p-2'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -39,7 +24,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
+              className='w-2.5 h-2.5 rounded-full bg-gray-500 mb-1'
             />
           </div>
         </a>

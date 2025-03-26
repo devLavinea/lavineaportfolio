@@ -13,10 +13,13 @@
  
 }
 
+body{
+  overflow-x:hidden;
+}
+
 :root {
-  --primary: #050816;
+  --primary: #000211;
   --secondary: #aaa6c3;
-  --tertiary: #151030;
   --black-100: #100d25;
   --black-200: #090325;
   --white-100: #f3f3f3;
@@ -29,20 +32,60 @@
 }
 .div-1{
   margin-left:50px;
+
  
+}
+.div-2{
+  margin-left:110px;
+  margin-bottom:20px;
+ 
+}
+
+.div-3{
+  margin:10px 5px;
+}
+
+.text3d{
+  text-shadow: 3px 3px 5px #000;
 }
 
 .bg-primary{
   background-color: var(--primary);
 }
+.bg-quaternary{
+  background-color:#090325;
+}
 
-.bg-secondary{
-  background-color: var(--secondary);
+.bg-secondary{ 
+  background-color: #000211;
+  border:solid 1px #3945ef;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 0.5px #3945ef;
+}
+
+.whatsapp{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  position:fixed;
+  bottom:5%;
+  right:3%;
+  z-index:10;
+
+  background:linear-gradient(90deg, #3945ef , #1f2371);
+  border-radius:50%;
+  color:white;
+  font-size:36px;
+  box-shadow: 1px 1px 5px 2px #000;
+  cursor:pointer;
 }
 
 
 .bg-tertiary {
-  background-color: var(--tertiary);
+  background:linear-gradient(360deg, #000211 30% , #3945ef );
+  border:solid 1px #3945ef;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 0.5px #3945ef;
 }
 
 .bg-black-100 {
@@ -61,41 +104,89 @@
 .box-shadow-card {
   box-shadow: var(--boxShadow-card);
 }
+body{
+  background-color: var(--primary);
+}
 
-
-.bg-custom{
+.bg-custom1{
   background-image: url('./assets/herobg.png');
   background-size: cover;
+  background-position: center; 
+
+} 
+.bg-custom2{
+  background-image: url('./assets/imgcta.jpg');
+  background-size: cover; 
+  object-fit: cover;
   background-position: center;
+
+  
 }
+
+
+
+.swiper {
+  width: 90%;
+  height: 70vh;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+.swiper-card{
+  width:100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.btn-default{
+  background: linear-gradient(45deg, #3945ef, #000211);
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size:1rem;
+  padding:10px;
+}
+
+
+
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
 }
 
-.black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.navbar{
+  background-color:var(--primary);
+  padding-bottom:30px;
+  border:solid 1px black;
+  
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+
+
+.blue-gradient {
+  background: #3945ef;
+  background: linear-gradient(-90deg, #3945ef 0%, #3945ef00 100%);
+
   background: -webkit-linear-gradient(
-    -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
-  );
+  -90deg,
+  #3945ef 0%,
+  #3945ef00 100%
+);
 }
 
 .green-pink-gradient {
@@ -257,3 +348,4 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+

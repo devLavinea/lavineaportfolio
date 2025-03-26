@@ -27,37 +27,25 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "cta",
+    title: "Sobre",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Projetos",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contato",
   },
+  {
+    id: "curriculo",
+    title: "Currículo",
+    href: "https://drive.google.com/file/d/1ft12OYIh8VN4cAHXzbkkCoZTMUoKpynp/view?usp=drive_link", 
+  }
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
+
 
 const technologies = [
   {
@@ -116,55 +104,84 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Figma",
+    icon: figma,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Criação de protótipos interativos e wireframes para aplicativos e websites.",
+      "Desenvolvimento de designs responsivos, garantindo uma experiência consistente em diferentes dispositivos.",
+      "Colaboração com equipes de design e desenvolvimento para alinhar visual e funcionalidade.",
+      "Uso de componentes reutilizáveis e sistemas de design para manter consistência no produto."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "HTML:",
+    icon: html,
+    iconBg: "#0a0936",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Estruturação de conteúdo web usando HTML, garantindo acessibilidade e semântica.",
+      "Criação de páginas responsivas com uso de tags e atributos HTML5.",
+      "Integração de mídia, como imagens, vídeos e áudios, dentro de páginas web.",
+      "Utilização de formulários HTML para captura de dados e interação com o usuário."
     ],
   },
+
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "CSS: ",
+    icon: css,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Estilização de páginas web com CSS para criar layouts atraentes e funcionais.",
+      "Uso de Flexbox e Grid para construção de layouts responsivos e dinâmicos.",
+      "Aplicação de transições e animações para melhorar a interatividade e a experiência do usuário.",
+      "Personalização de temas e estilos com CSS3, incluindo variáveis e pré-processadores como Sass."
+    ],
+  },
+
+  {
+    title: "JavaScript:",
+    icon: javascript,
+    iconBg: "#0a0936",
+    points: [
+      "Gerenciamento eficiente de estado global em aplicações JavaScript.",
+  "Uso de actions e reducers para manipular e atualizar o estado de forma previsível.",
+  "Integração com React para facilitar a sincronização de dados entre componentes.",
+  "Implementação de middleware como Redux Thunk para lidar com operações assíncronas."
+    ],
+  },
+  {
+    title: "React ",
+    icon: reactjs,
+    iconBg: "#E6DEDD",
+    points: [
+      "Desenvolvimento e manutenção de aplicações web usando React.js e tecnologias relacionadas.",
+      "Colaboração com equipes multifuncionais para criar produtos de alta qualidade.",
+      "Implementação de design responsivo e garantia de compatibilidade entre navegadores.",
+      "Participação em revisões de código e fornecimento de feedback construtivo para a equipe."
+    ],
+  },
+ 
+ 
+  {
+    title: "Git",
+    icon: git,
+    iconBg: "#0a0936",
+    points: [
+      "Controle de versão de código-fonte para facilitar o gerenciamento e colaboração.",
+      "Uso de branches para desenvolvimento de funcionalidades de forma isolada e sem conflitos.",
+      "Integração com plataformas como GitHub para repositórios remotos e colaboração em equipe.",
+      "Realização de merge e resolução de conflitos de código durante o processo de integração."
+    ],
+  },
+  {
+    title: "Three JS",
+    icon: threejs,
+    iconBg: "#E6DEDD",
+    points: [
+      "Criação de gráficos 3D interativos para aplicações web usando Three.js.",
+      "Desenvolvimento de animações 3D e efeitos visuais imersivos.",
+      "Integração de modelos 3D, texturas e luzes para ambientes realistas na web.",
+      "Otimização de performance para garantir a fluidez em dispositivos diversos."
     ],
   },
 ];
@@ -172,7 +189,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "Eu pensei que fosse impossível criar um site tão bonito quanto o nosso produto, mas Lavinea me provou o contrário.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -180,7 +197,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Eu nunca conheci uma desenvolvedora web que realmente se importe com o sucesso de seus clientes como a Lavinea.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,13 +205,14 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Depois que Lavinea otimizou nosso site, nosso tráfego aumentou em 50%. Não temos palavras para agradecê-la!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
+
 
 const projects = [
   {
@@ -260,6 +278,69 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };

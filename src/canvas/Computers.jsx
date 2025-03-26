@@ -14,8 +14,9 @@ return (
      <mesh>
         <directionalLight 
    position={[0, 10, 0]}   // A luz vem de cima (no eixo Y)
-   intensity={2}            // Ajuste a intensidade para controlar a quantidade de luz
-   castShadow={true}        // Caso queira que a luz faça sombras
+   intensity={1.5}            // Ajuste a intensidade para controlar a quantidade de luz
+   castShadow={true}  
+   color={'#fff'}      // Caso queira que a luz faça sombras
  /> 
         <hemisphereLight intensity={0.5} groundColor='black' />
        <spotLight
@@ -67,7 +68,11 @@ return (
        shadows
        dpr={[1, 2]}
        camera={{ position: [20, 3, 5], fov: 25 }}
-       gl={{ preserveDrawingBuffer: true }}
+       
+  gl={{ preserveDrawingBuffer: true }}
+  style={{
+    marginLeft: isMobile ? '-30px' : '0', // Aplica -10px de margem à esquerda se for mobile
+  }}
      >
        <Suspense fallback={<CanvasLoader />}>
          <OrbitControls
