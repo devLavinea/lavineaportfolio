@@ -18,20 +18,22 @@ import { Pagination, Navigation } from 'swiper/modules';
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
     <motion.div className="w-full relative" variants={fadeIn("up", "spring", 0.5, 0.75)}>
-      <div className="bg-tertiary p-5 h-[430px] rounded-2xl"> {/* Nova div envolvendo o Tilt */}
+      <div className="bg-tertiary  h-[430px] rounded-2xl flex flex-col justify-between"> {/* Nova div envolvendo o Tilt */}
         <Tilt
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className="relative h-[230px]"
+          className="relative h-[47%]"
         >
+          
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-fiil  rounded-2xl"
           />
+          
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
@@ -45,14 +47,14 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
             </div>
           </div>
         </Tilt>
-        <div className="mt-5">
+        <div >
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 div-3">
           {tags.map((tag, index) => (
             // Usando o índice no key para garantir unicidade
-            <p key={`${name}-${tag.name}-${index}`} className={`text-[14px] ${tag.color}`}>
+            <p key={`${name}-${tag.name}-${index}`} className={`text-[14px] div-4 ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -82,7 +84,7 @@ const Works = () => {
 
         <Swiper
           slidesPerView={'auto'}
-          spaceBetween={30}
+          spaceBetween={20}
           pagination={{
             clickable: true,
           }}
@@ -104,7 +106,7 @@ const Works = () => {
             },
             1200: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 20,
             },
           }}
         >
@@ -116,6 +118,7 @@ const Works = () => {
                 tags={project.tags}
                 image={project.image}
                 source_code_link={project.source_code_link}
+              
               />
             </SwiperSlide>
           ))}
