@@ -12,11 +12,10 @@ import {
   figma,
   docker,
   devburguer,
-  emanuelserra,
+  manoelserra,
   consultora,
   restaurantefood,
   threejs,
-  
 } from "../assets";
 
 export const navLinks = [
@@ -205,9 +204,8 @@ const testimonials = [
 ];
 
 const projects = [
-  
   {
-    name: "Arqt.  Emanuel Serra",
+    name: "Arqt. Manoel Serra",
     description:
       "Site com portfólio de arquitetura, com navegação intuitiva, design clean e otimização para todas as plataformas, destacando seus projetos e expertise.",
     tags: [
@@ -224,8 +222,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: emanuelserra,
-    source_code_link: "https://github.com/",
+    image: manoelserra,
+    source_code_link: "https://github.com/devLavinea/arquiteto-manoel-serra",
   },
   {
     name: "Dev Burguer",
@@ -246,13 +244,13 @@ const projects = [
       },
     ],
     image: devburguer,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/devLavinea/burguerdev",
   },
   {
     name: "Consultora Hyundai",
     description:
-    "Site institucional de consultoria de vendas, com design moderno e otimização para todas as plataformas, destacando serviços, veículos disponíveis e soluções personalizadas para clientes."   
-    , tags: [
+      "Site institucional de consultoria de vendas, com design moderno e otimização para todas as plataformas, destacando serviços, veículos disponíveis e soluções personalizadas para clientes.",
+    tags: [
       {
         name: "Javascript",
         color: "blue-text-gradient",
@@ -267,12 +265,13 @@ const projects = [
       },
     ],
     image: consultora,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/devLavinea/sitequelly",
   },
   {
     name: "Restaurante Food",
     description:
-"Landing page de restaurante, com design atraente e responsivo, menu interativo, seção de feedbacks de clientes e otimização para uma experiência de usuário intuitiva em todas as plataformas."    ,tags: [
+      "Landing page de restaurante, com design atraente e responsivo, menu interativo, seção de feedbacks de clientes e otimização para uma experiência de usuário intuitiva em todas as plataformas.",
+    tags: [
       {
         name: "Javascript",
         color: "blue-text-gradient",
@@ -287,9 +286,8 @@ const projects = [
       },
     ],
     image: restaurantefood,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/devLavinea/restaurante-food",
   },
-  
 ];
 
 export { technologies, experiences, testimonials, projects };

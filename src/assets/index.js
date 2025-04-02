@@ -19,7 +19,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import devburguer from "./devburguer.png";
-import emanuelserra from "./emanuelserra.png";
+import manoelserra from "./manoelserra.png";
 import consultora from "./consultora.png";
 import restaurantefood from "./restaurantefood.png";
 
@@ -42,7 +42,7 @@ export {
   typescript,
   threejs,
   devburguer,
-  emanuelserra,
+  manoelserra,
   restaurantefood,
   consultora,
 };
