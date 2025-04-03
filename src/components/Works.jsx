@@ -1,53 +1,57 @@
 import React from "react";
-import Tilt from 'react-parallax-tilt';
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
 import { SectionWrapper } from "../hoc";
 import { works } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import './swiper.css';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./swiper.css";
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from "swiper/modules";
 
-const WorkCard = ({ name, description, tags, image, source_code_link, path }) => {
+const WorkCard = ({ name, description, tags, image, path }) => {
   return (
-    <motion.div className="w-full relative" variants={fadeIn("up", "spring", 0.5, 0.75)}>
-
-      <div className="bg-tertiary  h-[430px] rounded-2xl flex flex-col justify-between"> {/* Nova div envolvendo o Tilt */}
-      <Link className="h-full w-full" to={path}>
-        <Tilt
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="relative h-[85%]"
-        >
-          
-         <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-fiil  rounded-2xl"
-          />
-         
-          
-        </Tilt>
+    <motion.div
+      className="w-full relative"
+      variants={fadeIn("up", "spring", 0.5, 0.75)}
+    >
+      <div className="bg-tertiary  h-[430px] rounded-2xl flex flex-col justify-between">
+        {" "}
+        {/* Nova div envolvendo o Tilt */}
+        <Link className="h-full w-full" to={path}>
+          <Tilt
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
+            className="relative h-[85%]"
+          >
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-fiil  rounded-2xl"
+            />
+          </Tilt>
         </Link>
-        <div >
+        <div>
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2 div-3">
           {tags.map((tag, index) => (
             // Usando o índice no key para garantir unicidade
-            <p key={`${name}-${tag.name}-${index}`} className={`text-[14px] div-4 ${tag.color}`}>
+            <p
+              key={`${name}-${tag.name}-${index}`}
+              className={`text-[14px] div-4 ${tag.color}`}
+            >
               #{tag.name}
             </p>
           ))}
@@ -61,7 +65,10 @@ const Works = () => {
   return (
     <div className="lg:w-[100vw] lg:h-[103vh] h-[120vh] md:h-[90vh] flex items-center justify-center">
       <section className=" lg:h-[105vh] h-[125vh] md:h-[90vh] w-[95vw] ml-[20px] flex flex-col px-4 py-8">
-        <motion.div className="w-full md:h-[18vh] h-[16vh] " variants={textVariant()}>
+        <motion.div
+          className="w-full md:h-[18vh] h-[16vh] "
+          variants={textVariant()}
+        >
           <p className={styles.sectionSubText}>Meu trabalho</p>
           <h2 className={styles.sectionHeadText}>Projetos.</h2>
         </motion.div>
@@ -71,12 +78,14 @@ const Works = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
           >
-            A seguir, os projetos mostram minhas habilidades e experiência por meio de exemplos reais do meu trabalho. Cada projeto é brevemente descrito com links para repositórios de código e demos ao vivo.
+            A seguir, os projetos mostram minhas habilidades e experiência por
+            meio de exemplos reais do meu trabalho. Cada projeto é brevemente
+            descrito com links para repositórios de código e demos ao vivo.
           </motion.p>
         </div>
 
         <Swiper
-          slidesPerView={'auto'}
+          slidesPerView={"auto"}
           spaceBetween={20}
           pagination={{
             clickable: true,
@@ -112,7 +121,6 @@ const Works = () => {
                 image={work.image}
                 source_code_link={work.source_code_link}
                 path={work.path}
-              
               />
             </SwiperSlide>
           ))}

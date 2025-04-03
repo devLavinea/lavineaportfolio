@@ -1,9 +1,5 @@
 
 
-import github from "./github.png";
-
-import close from "./close.svg";
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -31,9 +27,7 @@ import deskmanoelserra from "./deskmanoelserra.png";
 
 export {
   
-  github,
-  
-  close,
+ 
   css,
   docker,
   figma,

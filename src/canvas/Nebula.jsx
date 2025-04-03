@@ -2,7 +2,6 @@ import * as THREE from "three";
 
 const loader = new THREE.TextureLoader();
 
-// Função para criar um sprite da nebulosa
 function getSprite({ hasFog, color, opacity, path, pos, size }) {
   const spriteMat = new THREE.SpriteMaterial({
     color,
@@ -12,16 +11,15 @@ function getSprite({ hasFog, color, opacity, path, pos, size }) {
     opacity,
   });
 
-  spriteMat.color.offsetHSL(0, 0, Math.random() * 0.2 - 0.1); // Aleatoriza a cor do sprite
+  spriteMat.color.offsetHSL(0, 0, Math.random() * 0.2 - 0.1);
   const sprite = new THREE.Sprite(spriteMat);
-  sprite.position.set(pos.x, -pos.y, pos.z); // Posiciona o sprite no espaço 3D
+  sprite.position.set(pos.x, -pos.y, pos.z);
   size += Math.random() - 0.5;
-  sprite.scale.set(size, size, size); // Ajusta o tamanho do sprite
-  sprite.material.rotation = 0; // Não rotaciona o sprite
+  sprite.scale.set(size, size, size);
+  sprite.material.rotation = 0;
   return sprite;
 }
 
-// Função para criar todos os sprites da nebulosa
 function getSprites({
   hasFog = true,
   hue = 0.65,
@@ -31,7 +29,7 @@ function getSprites({
   radius = 10,
   sat = 0.5,
   size = 24,
-  z = -20,  // Ajustando a profundidade para mais fundo
+  z = -20,
 } = {}) {
   const layerGroup = new THREE.Group();
   for (let i = 0; i < numSprites; i += 1) {
@@ -39,7 +37,7 @@ function getSprites({
     const pos = new THREE.Vector3(
       Math.cos(angle) * Math.random() * radius,
       Math.sin(angle) * Math.random() * radius,
-      z + Math.random() * 10  // Maior variação na posição z para distribuir os sprites no fundo
+      z + Math.random() * 10
     );
 
     let color = new THREE.Color().setHSL(hue, 1, sat);
@@ -53,13 +51,12 @@ function Nebula() {
   const sprites = getSprites({
     numSprites: 8,
     radius: 10,
-    z: -30,  // Profundidade maior para posicionar no fundo
+    z: -30,
     size: 45,
     opacity: 0.2,
     path: "./rad-grad.png",
   });
-  
-  // A nebulosa será fixa no espaço e não se moverá
+
   return <primitive object={sprites} position={[0, 0, 0]} />;
 }
 

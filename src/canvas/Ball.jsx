@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from "react";
+import React, { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -14,11 +14,7 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float
-      speed={1.75}
-      rotationIntensity={1}
-     
-    >
+    <Float speed={1.75} rotationIntensity={1}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={props.scale}>
@@ -43,8 +39,6 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   const [scale, setScale] = useState(2.75);
-
- 
 
   return (
     <Canvas

@@ -14,7 +14,7 @@ function Earth() {
     ref.current.rotation.y += 0.003;
   });
 
-  const axialTilt = 23.4 * Math.PI / 180;
+  const axialTilt = (23.4 * Math.PI) / 180;
 
   return (
     <group rotation-z={axialTilt}>
@@ -56,31 +56,29 @@ function EarthCanvas() {
       camera={{ position: [0, 0.1, 5] }}
       gl={{ toneMapping: THREE.NoToneMapping }}
       style={{
-        width: "100%", 
-        height: "100%", 
-        display: "block",  // Garantir que o Canvas ocupe o espaço disponível
+        width: "100%",
+        height: "100%",
+        display: "block",
       }}
     >
       <Earth />
 
-      {/* Luz direcional azul escuro */}
-      <directionalLight 
-        color={0x00008B}   // Cor azul escuro
-        intensity={10}      // Intensidade da luz
-        position={[0, 30, 0]} 
-        castShadow={true}  // Ativa sombra, se necessário
+      <directionalLight
+        color={0x00008b}
+        intensity={10}
+        position={[0, 30, 0]}
+        castShadow={true}
       />
       <hemisphereLight args={[0xffffff, 0x000000, 3.0]} />
       <directionalLight position={[x, y, z]} />
       <Nebula />
-      
-      {/* Configuração do OrbitControls */}
+
       <OrbitControls
-        enableRotate={false}  // Desabilita rotação com o mouse
-        enablePan={false}     // Desabilita pan (movimento lateral com o mouse)
-        enableZoom={true}  
-        minDistance={4}       // Distância mínima (zoom máximo) da câmera
-        maxDistance={10}      // Distância máxima que a câmera pode alcançar
+        enableRotate={false}
+        enablePan={false}
+        enableZoom={true}
+        minDistance={4}
+        maxDistance={10}
       />
     </Canvas>
   );

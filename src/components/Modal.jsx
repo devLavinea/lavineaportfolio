@@ -3,10 +3,22 @@ import { useParams } from "react-router-dom";
 import { HiX } from "react-icons/hi";
 
 const data = {
-  devburguer: {name:"devburguer", site:"https://devburguer-psi.vercel.app/"},
-  manoelserra: {name:"manoelserra", site:"https://arquitetomanoelserra.vercel.app/"},
-  consultora: {name:"consultora", site:"https://consultorahyundai.vercel.app/"},
-  restaurantefood: {name:"restaurantefood", site:"https://restaurantefood.vercel.app/"},
+  devburguer: {
+    name: "devburguer",
+    site: "https://devburguer-psi.vercel.app/",
+  },
+  manoelserra: {
+    name: "manoelserra",
+    site: "https://arquitetomanoelserra.vercel.app/",
+  },
+  consultora: {
+    name: "consultora",
+    site: "https://consultorahyundai.vercel.app/",
+  },
+  restaurantefood: {
+    name: "restaurantefood",
+    site: "https://restaurantefood.vercel.app/",
+  },
 };
 
 const Project = () => {
@@ -31,7 +43,12 @@ const Project = () => {
           <div className="fixed z-40 md:w-[94vw] md:h-[94vh] w-[96vw] h-[96vh] border-[#3945ef] border-2 md:top-[3vh] md:left-[2vw] top-[2vh] left-[2vw] rounded-2xl overflow-hidden">
             <div className="w-full h-15 bg-black border-b-2 border-[#3945ef] flex items-center justify-end div-5 rounded-t-2xl">
               <div className="flex items-center justify-between w-full md:w-[98%] text-white">
-                <a className="underline  text-[14px] md:text-[18px]" href={info.site} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="underline  text-[14px] md:text-[18px]"
+                  href={info.site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {info.site}
                 </a>
                 <HiX className="text-3xl cursor-pointer" onClick={closeModal} />

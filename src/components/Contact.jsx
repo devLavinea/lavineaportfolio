@@ -12,6 +12,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -36,36 +37,36 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Lavinea Souza",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "lavinea2411@gmail.com",
           message: form.message,
+          phone: form.phone,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          alert("Obrigado. Entrarei em contato com você assim que possível.");
           setForm({
             name: "",
             email: "",
             message: "",
+            phone: "",
           });
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          console.error("Erro ao enviar email:", error);
+          alert("Ahh, algo deu errado. Por favor, tente novamente.");
         }
       );
   };
 
   return (
     <div className="w-[100vw] lg:h-[85vh] h-[135vh] md:h-[100vh]  flex items-center justify-center">
-      <section className=" w-[96vw] h-[98%] lg:w-[90vw] lg:h-[90%] flex flex-col md:items-center lg:flex-row-reverse gap-10 lg:gap-0 overflow-hidden">
+      <section className=" w-[96vw] h-[98%] lg:w-[90vw] lg:h-[92%] flex flex-col md:items-center lg:flex-row-reverse gap-10 lg:gap-0 overflow-hidden">
         {/* Canvas do planeta */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
@@ -85,7 +86,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
+            className="mt-12 flex flex-col gap-5"
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Seu nome</span>
@@ -95,6 +96,17 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Qual o seu nome?"
+                className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">Seu telefone</span>
+              <input
+                type="phone"
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                placeholder="Qual o seu telefone para contato?"
                 className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
@@ -109,6 +121,7 @@ const Contact = () => {
                 className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
+
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Sua mensagem</span>
               <textarea
@@ -123,9 +136,9 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="cursor-pointer bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
             >
-              {loading ? "Sending..." : "Send"}
+              {loading ? "Enviando..." : "Enviar"}
             </button>
           </form>
         </motion.div>
