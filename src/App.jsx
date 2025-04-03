@@ -15,7 +15,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="relative flex-col items-center justify-center z-0 bg-primary">
+    <div className="relative flex-col items-center justify-center z-0 bg-primary overflow-x-hidden">
       <div className="bg-custom bg-cover bg-no-repeat bg-center">
         {/* <Whatsapp /> */}
         <Navbar />
