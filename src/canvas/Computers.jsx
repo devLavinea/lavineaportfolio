@@ -60,10 +60,16 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 22 }}
       gl={{ preserveDrawingBuffer: true }}
       style={{
-        marginLeft: isMobile ? "-30px" : "0",
+        marginLeft: isMobile ? "0" : "auto", // Garantir que o Canvas não tenha margem indesejada em dispositivos maiores
+        marginRight: isMobile ? "0" : "auto",
+        display: "block", // Certificando-se que o Canvas é tratado como um bloco
+        position: "absolute",
+        top: "30%", // Posicionando no centro da tela
+        left: "43%",
+        transform: "translate(-50%, -50%)", // Centralizando perfeitamente
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
