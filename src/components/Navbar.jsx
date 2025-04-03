@@ -27,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" bg-primary border w-full flex items-center py-5 fixed top-0 z-20 ">
+    <nav className=" bg-primary border max-w-[100vw] flex items-center py-5 fixed top-0 z-20 ">
       <div className="w-full border bg-primary  flex justify-between items-center  mx-auto">
         <Link
           to="/"
