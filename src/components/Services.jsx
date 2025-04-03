@@ -4,6 +4,9 @@ import Tilt from "react-parallax-tilt"; // Importação do motion
 import { SectionWrapper } from "../hoc";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { styles } from "../styles";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { FaPager } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
 
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -24,19 +27,27 @@ const cardData = [
     id: 1,
     title: "Landing Pages",
     description: "Landing pages focadas em resultados, com design simples, CTAs atraentes e conteúdo persuasivo, sempre visando maximizar conversões e alcançar os objetivos do cliente.",
-    buttonText: "Quero uma Landing Page"
+    buttonText: "Quero uma Landing Page",
+    icon:  <FaPager />,
+    
   },
   {
     id: 2,
     title: "Desenvolvimento de sites",
     description: "Criação de sites personalizados, incluindo portfólios, sites institucionais, sites corporativos e outros projetos. Sempre atendendo às necessidades específicas de cada cliente.",
-    buttonText: "Quero um Web Site"
+    buttonText: "Quero um Web Site",
+    icon: <TbWorldWww />,
+    
   },
   {
     id: 3,
     title: "Web Designer",
-    description: "Criação de designs personalizados e responsivos, focando na estética e funcionalidade. Meu objetivo é garantir uma experiência de usuário intuitiva e envolvente, com layouts que se adaptam a qualquer dispositivo.",
-    buttonText: "Quero um Layout"
+    description: "Criação de designs personalizados e responsivos. Meu objetivo é garantir uma experiência de usuário intuitiva e envolvente, com layouts que se adaptam a qualquer dispositivo.",
+    buttonText: "Quero um Layout",
+    icon: < MdOutlineDesignServices />,
+    
+  
+    
   },
 
  
@@ -112,7 +123,8 @@ const Services = () => {
               boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)", // Efeito de sombra no hover
             }}
           >
-            <div className='h-full flex flex-col justify-around'>
+            <div className='h-full flex flex-col items-center justify-around'>
+            <div className='text-[40px] h-[50px] text-[#544eff]'>{card.icon}</div>  
             <h3 className='text-[20px] font-semibold'>{card.title}</h3>
             <p className='text-[18px] md:text-[19px] text-[#dfd9ff]'>{card.description}</p>
             <button className="div-3 btn-default">{card.buttonText}</button>

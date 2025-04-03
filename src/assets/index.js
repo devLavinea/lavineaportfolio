@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+
 
 import github from "./github.png";
-import menu from "./menu.svg";
+
 import close from "./close.svg";
 
 import css from "./tech/css.png";
@@ -23,10 +23,16 @@ import manoelserra from "./manoelserra.png";
 import consultora from "./consultora.png";
 import restaurantefood from "./restaurantefood.png";
 
+import deskdevburguer from "./deskdevburguer.png";
+import deskrestaurantefood from "./deskrestaurantefood.png";
+import deskconsultora from "./deskconsultora.png";
+import deskmanoelserra from "./deskmanoelserra.png";
+
+
 export {
-  logo,
+  
   github,
-  menu,
+  
   close,
   css,
   docker,
@@ -45,4 +51,8 @@ export {
   manoelserra,
   restaurantefood,
   consultora,
+  deskdevburguer,
+  deskmanoelserra,
+  deskconsultora,
+  deskrestaurantefood,
 };

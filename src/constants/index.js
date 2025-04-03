@@ -1,3 +1,4 @@
+import { path } from "framer-motion/client";
 import {
   javascript,
   typescript,
@@ -203,7 +204,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const works = [
   {
     name: "Arqt. Manoel Serra",
     description:
@@ -224,6 +225,7 @@ const projects = [
     ],
     image: manoelserra,
     source_code_link: "https://github.com/devLavinea/arquiteto-manoel-serra",
+    path:"/manoelserra",
   },
   {
     name: "Dev Burguer",
@@ -245,6 +247,7 @@ const projects = [
     ],
     image: devburguer,
     source_code_link: "https://github.com/devLavinea/burguerdev",
+    path:"/devburguer",
   },
   {
     name: "Consultora Hyundai",
@@ -266,6 +269,7 @@ const projects = [
     ],
     image: consultora,
     source_code_link: "https://github.com/devLavinea/sitequelly",
+    path:"/consultora",
   },
   {
     name: "Restaurante Food",
@@ -287,7 +291,12 @@ const projects = [
     ],
     image: restaurantefood,
     source_code_link: "https://github.com/devLavinea/restaurante-food",
+    path:"/restaurantefood",
   },
+
 ];
 
-export { technologies, experiences, testimonials, projects };
+
+
+
+export { technologies, experiences, testimonials, works };

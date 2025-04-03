@@ -48,6 +48,10 @@ body{
   padding:1px 5px;
 }
 
+.div-5{
+  padding:1px 20px;
+}
+
 .text3d{
   text-shadow: 3px 3px 5px #000;
 }
@@ -178,6 +182,39 @@ body{
   border:solid 1px black;
   
 }
+
+
+
+
+
+
+
+/* Estilizando a barra de rolagem com bordas arredondadas e fundo transparente */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+  border-radius: 10px; /* Borda arredondada na barra de rolagem */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent; /* Torna o fundo da pista transparente */
+  border-radius: 10px; /* Bordas arredondadas na pista */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #3945ef; /* Cor da "cabeça" da barra de rolagem (o "padrão") */
+  border-radius: 10px; /* Bordas arredondadas no thumb */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #283a90; /* Cor ao passar o mouse sobre a barra de rolagem */
+}
+
+/* Para Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: #3945ef transparent; /* Cor do thumb e pista (transparent) */
+}
+
 
 
 

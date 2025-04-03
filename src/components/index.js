@@ -10,12 +10,14 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Project from "./Modal";
 
 
 export {
   Hero,
   Navbar,
   Services,
+  Project,
   Tech,
   Experience,
   Works,
