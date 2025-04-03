@@ -65,7 +65,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[100vw] lg:h-[85vh] h-[135vh] md:h-[100vh] overflow-x-hidden  flex items-center justify-center">
+    <div className="w-[100vw] lg:h-[85vh] h-[135vh] md:h-[100vh]  flex items-center justify-center">
       <section className=" w-[96vw] h-[98%] lg:w-[90vw] lg:h-[92%] flex flex-col md:items-center lg:flex-row-reverse gap-10 lg:gap-0 overflow-hidden">
         {/* Canvas do planeta */}
         <motion.div
