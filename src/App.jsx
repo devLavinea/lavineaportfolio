@@ -6,7 +6,7 @@ import Cta from "./components/Cta";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
-// import Tech from "./components/Tech";
+import Tech from "./components/Tech";
 import Experience from "./components/Experience";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
@@ -24,7 +24,7 @@ const App = () => {
       </div>
       <Works />
       <Experience />
-      {/* <Tech /> */}
+       <Tech /> 
       <Services />
       <Feedbacks />
       <div className="relative z-0">
