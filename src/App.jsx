@@ -24,7 +24,7 @@ const App = () => {
       </div>
       <Works />
       <Experience />
-       <Tech className="hidden md:block" /> 
+       <Tech /> 
       <Services />
       <Feedbacks />
       <div className="relative z-0">
