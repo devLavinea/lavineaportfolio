@@ -7,9 +7,9 @@ const styles = {
   paddingLeft: "pl-[10px]",
 
   ctaHeadText:
-    "font-black text-white lg:text-[65px] md:text-[60px]  sm:text-[40px] text-[35px] lg:leading-[98px] mt-2 ",
+    "font-black text-white lg:text-[55px] md:text-[50px]  sm:text-[40px] text-[35px] lg:leading-[98px] mt-2 ",
   ctaSubText:
-    " text-[#dfd9ff] font-medium sm:text-[20px] md:text-[30px] text-[18.5px] ",
+    " text-[#dfd9ff] font-medium text-[20px] md:text-[28px]  ",
 
   sectionHeadText:
     " text-white font-black  lg:text-[40px] text-[30px] md:text-[45px]",

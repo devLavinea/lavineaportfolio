@@ -5,7 +5,7 @@ const Cta = () => {
   return (
     <section
       id="cta"
-      className=" w-full lg:h-[15vh]  h-[50vh] md:h-[42vh] flex justify-end relative "
+      className=" w-full lg:h-[15vh]  h-[50vh] md:h-[82vh] flex justify-end relative "
     >
       <div className="w-[500px] h-[500px] absolute top-10 right-15"></div>
 
@@ -17,7 +17,7 @@ const Cta = () => {
 
         <div className="h-auto ">
           <h1
-            className={`text3d ${styles.ctaHeadText} md:h-[18vh] md:leading-tight `}
+            className={`text3d ${styles.ctaHeadText} md:h-[16vh] md:leading-tight `}
           >
             Olá, Eu sou <span className="text-[#3945ef]">Lavinea Souza</span>
           </h1>

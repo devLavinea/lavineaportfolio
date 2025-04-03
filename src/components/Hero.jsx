@@ -6,7 +6,7 @@ import { ComputersCanvas } from "../canvas";
 const Hero = () => {
   return (
     <section
-      className={` relative w-full lg:h-[100vh] h-[30vh] flex justify-center items-center`}
+      className={` relative w-full md:h-[100vh] h-[30vh] flex justify-center items-center`}
     >
       <div className="  w-full h-full bg-custom1 opacity-5 rounded-full filter blur-xl absolute bottom-0  "></div>
 

@@ -67,9 +67,10 @@ const ComputersCanvas = () => {
         marginRight: isMobile ? "0" : "auto",
         display: "block", // Certificando-se que o Canvas é tratado como um bloco
         position: "absolute",
-        top: "30%", // Posicionando no centro da tela
-        left: "43%",
-        transform: "translate(-50%, -50%)", // Centralizando perfeitamente
+        top:isMobile ? "30%" : "50%", // Posicionando no centro da tela
+        left: isMobile ? "43%" :"46%",
+        transform: "translate(-50%, -50%)", 
+        height: isMobile ? "100%" : "80%",
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
