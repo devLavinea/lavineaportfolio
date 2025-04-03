@@ -1,6 +1,8 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
+
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+
 import CanvasLoader from "../components/Loader";
 
 const Computers = ({ isMobile }) => {
@@ -57,16 +59,11 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={isMobile ? 1 : 2} // Ajuste o dpr conforme necessário
-      camera={{ position: [20, 3, 5], fov: isMobile ? 30 : 25 }} // Ajuste o fov para telas menores
+      dpr={[1, 2]}
+      camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
       style={{
-        width: "100%",
-        height: "100vh", // Ajuste a altura para o canvas ocupar toda a tela
-        margin: 0, // Remova margens negativas
-        position: "absolute",
-        top: 0,
-        left: 0,
+        marginLeft: isMobile ? "-30px" : "0",
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
