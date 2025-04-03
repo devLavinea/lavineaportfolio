@@ -19,10 +19,6 @@ import manoelserra from "./manoelserra.png";
 import consultora from "./consultora.png";
 import restaurantefood from "./restaurantefood.png";
 
-import deskdevburguer from "./deskdevburguer.png";
-import deskrestaurantefood from "./deskrestaurantefood.png";
-import deskconsultora from "./deskconsultora.png";
-import deskmanoelserra from "./deskmanoelserra.png";
 
 
 export {
@@ -45,8 +41,5 @@ export {
   manoelserra,
   restaurantefood,
   consultora,
-  deskdevburguer,
-  deskmanoelserra,
-  deskconsultora,
-  deskrestaurantefood,
+
 };
