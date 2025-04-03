@@ -11,13 +11,13 @@ import Experience from "./components/Experience";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
-import Whatsapp from "./components/whatsapp";
+// import Whatsapp from "./components/whatsapp";
 
 const App = () => {
   return (
     <div className="relative flex-col items-center justify-center z-0 bg-primary">
       <div className="bg-custom bg-cover bg-no-repeat bg-center">
-        <Whatsapp />
+        {/* <Whatsapp /> */}
         <Navbar />
         <Cta />
         <Hero />
