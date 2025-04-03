@@ -7,7 +7,7 @@ const Tech = () => {
   const renderedTechnologies = useMemo(
     () =>
       technologies.map((technology) => (
-        <div className="w-28 h-28  hidden md:block" key={technology.name}>
+        <div className="w-28 h-28  " key={technology.name}>
           <BallCanvas icon={technology.icon} />
         </div>
       )),
