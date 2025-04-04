@@ -27,6 +27,7 @@ const cardData = [
     description:
       "Landing pages focadas em resultados, com design simples, CTAs atraentes e conteúdo persuasivo, sempre visando maximizar conversões e alcançar os objetivos do cliente.",
     buttonText: "Quero uma Landing Page",
+    buttonLink: "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20uma%20Landing%20Page.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
     icon: <FaPager />,
   },
   {
@@ -35,6 +36,7 @@ const cardData = [
     description:
       "Criação de sites personalizados, incluindo portfólios, sites institucionais, sites corporativos e outros projetos. Sempre atendendo às necessidades específicas de cada cliente.",
     buttonText: "Quero um Web Site",
+    buttonLink:"https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Site%20.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações." ,
     icon: <TbWorldWww />,
   },
   {
@@ -43,6 +45,7 @@ const cardData = [
     description:
       "Criação de designs personalizados e responsivos. Meu objetivo é garantir uma experiência de usuário intuitiva e envolvente, com layouts que se adaptam a qualquer dispositivo.",
     buttonText: "Quero um Layout",
+    buttonLink: "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Layout.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
     icon: <MdOutlineDesignServices />,
   },
 ];
@@ -131,9 +134,11 @@ const Services = () => {
                         <p className="text-[18px] md:text-[19px] text-[#dfd9ff]">
                           {card.description}
                         </p>
-                        <button className="div-3 btn-default">
+                        <a href={card.buttonLink} target="_blank">
+                        <button  className="div-3 btn-default">
                           {card.buttonText}
                         </button>
+                        </a>
                       </div>
                     </motion.div>
                   </Tilt>
