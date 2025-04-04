@@ -65,13 +65,13 @@ const Works = () => {
   return (
     <div className="lg:w-[100vw] lg:h-[103vh] h-[114vh] md:h-[90vh] flex items-center justify-center">
       <section className=" lg:h-[105vh] h-[116vh] md:h-[90vh] w-[95vw] ml-[20px] flex flex-col px-4 py-8">
-        <motion.div
+        <div
           className="w-full md:h-[18vh] h-[16vh] "
-          variants={textVariant()}
+          
         >
           <p className={styles.sectionSubText}>Meu trabalho</p>
           <h2 className={styles.sectionHeadText}>Projetos.</h2>
-        </motion.div>
+        </div>
 
         <div className="w-full flex lg:h-[0vh] h-[20vh] md:h-[5vh]">
           <motion.p
