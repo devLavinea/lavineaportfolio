@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
-import { div } from "framer-motion/client";
 
 const FeedbackCard = ({
   index,
@@ -19,17 +18,17 @@ const FeedbackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-quaternary  rounded-3xl w-full xs:w-[320px] flex flex-col  "
   >
-    <p className="text-white h-[5vh] div-3 font-black text-[45px]">"</p>
+    <p className="text-white h-[5vh] mt-mb-10px  ml-mr-5px font-black text-[45px]">"</p>
 
-    <div className="div-1   ">
+    <div className="ml-50px   ">
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
 
       <div className="mt-7 flex justify-between items-center gap-1">
-        <div className="flex-1 div-3  flex flex-col">
+        <div className="flex-1 mt-mb-10px  ml-mr-5px  flex flex-col">
           <p className="text-white font-medium text-[16px]">
             <span className=" bg-blue-900 rounded-2xl   ">@</span> {name}
           </p>
-          <p className="mt-1 div-3 text-blue-900 text-secondary text-[12px]">
+          <p className="mt-1 mt-mb-10px  ml-mr-5px text-blue-900 text-secondary text-[12px]">
             {designation} of {company}
           </p>
         </div>
@@ -46,7 +45,7 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className="lg:w-[100vw] lg:h-[110vh] h-[153vh] md:h-[90vh] flex items-start justify-center">
+    <div className="lg:w-[100vw] lg:h-[110vh] h-[135vh] md:h-[90vh] flex items-start justify-center">
       <section className=" lg:h-[100vh] h-auto md:h-[98%] w-[90vw] ml-[20px] flex flex-col px-4 py-8">
         <div
           className={`  rounded-2xl ${styles.padding} lg:min-h-[200px] min-h-[110px]`}

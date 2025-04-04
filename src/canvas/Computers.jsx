@@ -68,7 +68,7 @@ const ComputersCanvas = () => {
         display: "block", // Certificando-se que o Canvas é tratado como um bloco
         position: "absolute",
         top:isMobile ? "30%" : "50%", // Posicionando no centro da tela
-        left: isMobile ? "43%" :"46%",
+        left: isMobile ? "42%" :"46%",
         transform: "translate(-50%, -50%)", 
         height: isMobile ? "100%" : "80%",
       }}

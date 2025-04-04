@@ -6,25 +6,25 @@ import { ComputersCanvas } from "../canvas";
 const Hero = () => {
   return (
     <section
-      className={` relative w-full md:h-[100vh] h-[30vh] flex justify-center items-center`}
+      className={` relative  w-full lg:h-[100vh] md:h-[50vh] h-[32vh] flex justify-center items-center`}
     >
       <div className="  w-full h-full bg-custom1 opacity-5 rounded-full filter blur-xl absolute bottom-0  "></div>
 
       <ComputersCanvas />
 
-      <div className="hidden lg:flex absolute xs:bottom-10 bottom-32 w-full  justify-center items-center">
+      <div className="  flex  absolute bottom-15 md:bottom-32 w-full  justify-center items-center">
         <a href="#work">
-          <div className="w-[25px] h-[54px]  rounded-3xl border-3 border-gray-500 flex justify-center items-start p-2">
+          <div className="md:w-[25px] md:h-[54px] w-[15px] h-[30px]  rounded-3xl border-3 border-gray-700 flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
               }}
               transition={{
-                duration: 1.5,
+                duration: 2,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-2.5 h-2.5 rounded-full bg-gray-500 mb-1"
+              className="md:w-2.5 md:h-2.5 w-1.5 h-1.5 rounded-full bg-gray-700 mb-1"
             />
           </div>
         </a>

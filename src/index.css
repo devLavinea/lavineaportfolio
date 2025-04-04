@@ -26,29 +26,34 @@ body {
   --xs-screen: 450px;
 }
 
-.div-1 {
+
+.ml-50px {
   margin-left: 50px;
 }
 
-.div-2 {
-  margin-left: 110px;
-  margin-bottom: 20px;
-}
+.mb-15px {
+  margin-bottom: 15px;
+} 
 
-.div-3 {
-  margin: 10px 5px;
-}
 
-.div-4 {
-  padding: 1px 5px;
+.mt-mb-10px {
+  margin-top: 10px ;
+  margin-bottom: 10px;
 }
+.ml-mr-5px {
+  margin-left: 5px;
+  margin-right: 5px;
 
-.div-5 {
+}
+.pl-pr-20px {
   padding: 1px 20px;
 }
 
-.div-6{
-  padding:10px 0px;
+
+
+.pt-pb-10px {
+  padding-top: 10px ;
+  padding-bottom: 10px;
 }
 
 

@@ -50,21 +50,21 @@ const cardData = [
 const Services = () => {
   return (
     <>
-      <div id="services" className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[153vh] flex items-start justify-center">
-        <section className=" lg:h-[100vh] md:h-[103vh] h-auto w-[90vw] ml-[20px] flex flex-col px-4 py-8">
+      <div id="services" className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[133vh] flex items-start justify-center">
+        <section className=" lg:h-[100vh] md:h-[103vh] h-[132vh]  w-[90vw] ml-[20px] flex  flex-col ">
           <motion.div
-            className="  h-[17vh] md:h-[25vh]"
+            className="  h-[15vh] md:h-[25vh] flex  items-center "
             variants={textVariant()}
           >
-            <h2 className={`${styles.sectionHeadText}`}>
+            <h2 className={`mb-15px ${styles.sectionHeadText}`}>
               <br></br>Serviços.
             </h2>
           </motion.div>
 
-          <div className="  w-full flex h-[50vh] md:h-[8vh] lg:h-[5vh]  ">
+          <div className="  w-full flex h-[28vh] md:h-[8vh] lg:h-[5vh]  ">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] "
+              className="text-[#dfd9ff] h-auto lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] "
             >
               Crio landing pages otimizadas, com design responsivo e foco em
               conversão. Desenvolvo portfólios personalizados, destacando
@@ -102,7 +102,7 @@ const Services = () => {
           >
             {cardData.map((card) => (
               <SwiperSlide key={card.id}>
-                <div className="swiper-slide">
+                <div  className="swiper-slide mb-15px">
                   <Tilt
                     options={{
                       max: 45, // Inclinação máxima
@@ -112,7 +112,7 @@ const Services = () => {
                     className="bg-secondary  rounded-2xl  w-[320px] h-[420px] lg:h-[370px] lg:w-[305px]"
                   >
                     <motion.div
-                      className="swiper-card p-5 "
+                      className="swiper-card p-5  "
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5 }}
@@ -121,7 +121,7 @@ const Services = () => {
                         boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.1)", // Efeito de sombra no hover
                       }}
                     >
-                      <div className="h-full flex flex-col items-center justify-around">
+                      <div className="h-full flex flex-col items-center justify-around ">
                         <div className="text-[40px] h-[50px] text-[#544eff]">
                           {card.icon}
                         </div>

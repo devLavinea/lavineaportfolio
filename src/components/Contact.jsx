@@ -65,12 +65,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[100vw] lg:h-[85vh] h-[135vh] md:h-[100vh]  flex items-center justify-center">
-      <section className=" w-[96vw] h-[98%] lg:w-[90vw] lg:h-[92%] flex flex-col md:items-center lg:flex-row-reverse gap-10 lg:gap-0 overflow-hidden">
+    <div className="w-[100vw]  lg:h-[85vh] h-[130vh] md:h-[100vh]  flex items-center justify-center">
+      <section className=" w-[96vw]  h-[98%] lg:w-[90vw] lg:h-[92%] flex flex-col md:items-center lg:flex-row-reverse gap-10 lg:gap-0 overflow-hidden">
         {/* Canvas do planeta */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 h-[300px] w-full lg:h-[98%] md:h-[600px] "
+          className="xl:flex-1 h-[480px] w-full lg:h-[98%] md:h-[600px] "
         >
           <EarthCanvas />
         </motion.div>
@@ -78,15 +78,15 @@ const Contact = () => {
         {/* Formulário de contato */}
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-secondary  rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
+          className="bg-secondary mb-15px  rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
         >
-          <p className={`div-4 ${styles.sectionSubText}`}>Entre em contato</p>
-          <h3 className={`div-4 ${styles.sectionHeadText}`}>Contato.</h3>
+          <p className={`pl-pr-20px ${styles.sectionSubText}`}>Entre em contato</p>
+          <h3 className={`pl-pr-20px ${styles.sectionHeadText}`}>Contato.</h3>
 
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 div-4 flex flex-col gap-5"
+            className="mt-12 pl-pr-20px flex flex-col gap-5"
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Seu nome</span>

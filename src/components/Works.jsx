@@ -32,7 +32,7 @@ const WorkCard = ({ name, description, tags, image, path }) => {
               scale: 1,
               speed: 450,
             }}
-            className="relative h-[30vh]"
+            className="relative h-[30vh] md:h-[25vh] mb-15px lg:h-[30vh]"
           >
             <img
               src={image}
@@ -63,8 +63,8 @@ const WorkCard = ({ name, description, tags, image, path }) => {
 
 const Works = () => {
   return (
-    <div className="lg:w-[100vw] lg:h-[103vh] h-[120vh] md:h-[90vh] flex items-center justify-center">
-      <section className=" lg:h-[105vh] h-[125vh] md:h-[90vh] w-[95vw] ml-[20px] flex flex-col px-4 py-8">
+    <div className="lg:w-[100vw] lg:h-[103vh] h-[114vh] md:h-[90vh] flex items-center justify-center">
+      <section className=" lg:h-[105vh] h-[116vh] md:h-[90vh] w-[95vw] ml-[20px] flex flex-col px-4 py-8">
         <motion.div
           className="w-full md:h-[18vh] h-[16vh] "
           variants={textVariant()}
