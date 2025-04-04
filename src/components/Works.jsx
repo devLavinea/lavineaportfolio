@@ -78,9 +78,11 @@ const Works = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
           >
-            A seguir, os projetos mostram minhas habilidades e experiência por
-            meio de exemplos reais do meu trabalho. Cada projeto é brevemente
-            descrito com links para repositórios de código e demos ao vivo.
+            A seguir, apresento projetos que demonstram
+             minhas habilidades e experiência por meio de 
+             exemplos práticos do meu trabalho. Cada projeto
+              é exibido ao vivo em um frame, proporcionando uma 
+            visão clara e detalhada do meu processo e resultados.
           </motion.p>
         </div>
 
