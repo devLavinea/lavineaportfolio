@@ -70,7 +70,7 @@ const Contact = () => {
         {/* Canvas do planeta */}
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 h-[300px] w-full lg:h-[90%] md:h-[600px] "
+          className="xl:flex-1 h-[300px] w-full lg:h-[98%] md:h-[600px] "
         >
           <EarthCanvas />
         </motion.div>
@@ -78,15 +78,15 @@ const Contact = () => {
         {/* Formulário de contato */}
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-secondary rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
+          className="bg-secondary  rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
         >
-          <p className={styles.sectionSubText}>Entre em contato</p>
-          <h3 className={styles.sectionHeadText}>Contato.</h3>
+          <p className={`div-4 ${styles.sectionSubText}`}>Entre em contato</p>
+          <h3 className={`div-4 ${styles.sectionHeadText}`}>Contato.</h3>
 
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-5"
+            className="mt-12 div-4 flex flex-col gap-5"
           >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Seu nome</span>
@@ -95,8 +95,8 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Qual o seu nome?"
-                className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                placeholder="   Qual o seu nome?"
+                className="bg-quaternary h-[35px]  placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -106,8 +106,8 @@ const Contact = () => {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="Qual o seu telefone para contato?"
-                className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                placeholder="   Qual o seu telefone para contato?"
+                className="bg-quaternary h-[35px] placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -117,8 +117,8 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="Qual é o seu email?"
-                className="bg-quaternary h-[35px] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                placeholder="   Qual é o seu email?"
+                className="bg-quaternary h-[35px]  placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
 
@@ -129,14 +129,14 @@ const Contact = () => {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="O que você quer dizer?"
-                className="bg-quaternary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                placeholder="   O que você quer dizer?"
+                className="bg-quaternary  placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
 
             <button
               type="submit"
-              className="cursor-pointer bg-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="cursor-pointer bg-secondary  rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
             >
               {loading ? "Enviando..." : "Enviar"}
             </button>

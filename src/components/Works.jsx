@@ -22,7 +22,7 @@ const WorkCard = ({ name, description, tags, image, path }) => {
       className="w-full relative"
       variants={fadeIn("up", "spring", 0.5, 0.75)}
     >
-      <div className="bg-tertiary  h-[430px] rounded-2xl flex flex-col justify-between">
+      <div className="bg-tertiary  h-[460px] rounded-2xl flex flex-col justify-between">
         {" "}
         {/* Nova div envolvendo o Tilt */}
         <Link className="h-full w-full" to={path}>
@@ -32,18 +32,18 @@ const WorkCard = ({ name, description, tags, image, path }) => {
               scale: 1,
               speed: 450,
             }}
-            className="relative h-[85%]"
+            className="relative h-[30vh]"
           >
             <img
               src={image}
               alt="project_image"
-              className="w-full h-full object-fiil  rounded-2xl"
+              className="w-full  object-fiil  rounded-2xl"
             />
           </Tilt>
         </Link>
-        <div>
+        <div className=" h-[40vh] ">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 div-6 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2 div-3">
           {tags.map((tag, index) => (

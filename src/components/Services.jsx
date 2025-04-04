@@ -50,7 +50,7 @@ const cardData = [
 const Services = () => {
   return (
     <>
-      <div className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[153vh] flex items-start justify-center">
+      <div id="services" className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[153vh] flex items-start justify-center">
         <section className=" lg:h-[100vh] md:h-[103vh] h-auto w-[90vw] ml-[20px] flex flex-col px-4 py-8">
           <motion.div
             className="  h-[17vh] md:h-[25vh]"

@@ -32,10 +32,10 @@ export const navLinks = [
     title: "Contato",
   },
   {
-    id: "curriculo",
-    title: "Currículo",
-    href: "https://drive.google.com/file/d/1ft12OYIh8VN4cAHXzbkkCoZTMUoKpynp/view?usp=drive_link",
+    id: "services",
+    title: "Serviços",
   },
+
 ];
 
 const technologies = [
