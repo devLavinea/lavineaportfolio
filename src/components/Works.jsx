@@ -22,7 +22,7 @@ const WorkCard = ({ name, description, tags, image, path }) => {
       className="w-full relative"
       variants={fadeIn("up", "spring", 0.5, 0.75)}
     >
-      <div className="bg-tertiary  h-[460px] rounded-2xl flex flex-col justify-between">
+      <div className="bg-tertiary  h-[440px] rounded-2xl flex flex-col justify-between">
         {" "}
         {/* Nova div envolvendo o Tilt */}
         <Link className="h-full w-full" to={path}>

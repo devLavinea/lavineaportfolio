@@ -180,26 +180,27 @@ const testimonials = [
   {
     testimonial:
       "Eu pensei que fosse impossível criar um site tão bonito quanto o nosso produto, mas Lavinea me provou o contrário.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    name: "Ana Carolina",
+    designation: "Gerente de Marketing",
+    company: "Restaurante Food",
+    
+    image: "https://randomuser.me/api/portraits/women/8.jpg",
   },
   {
     testimonial:
-      "Eu nunca conheci uma desenvolvedora web que realmente se importe com o sucesso de seus clientes como a Lavinea.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+     "Depois que Lavinea criou e otimizou nosso site, nosso tráfego aumentou em 50%. Não temos palavras para agradecê-la!",
+    name: "Lucas Oliveira",
+    designation: "Proprietário",
+    company: "Dev Burguer",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "Depois que Lavinea otimizou nosso site, nosso tráfego aumentou em 50%. Não temos palavras para agradecê-la!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    "Eu nunca conheci uma desenvolvedora web que realmente se importe com o sucesso de seus clientes como a Lavinea.",
+    name: "Sara Felix",
+    designation: "Gerente de Vendas",
+    company:"TH Consultoria",
+    image: "https://randomuser.me/api/portraits/women/30.jpg",
   },
 ];
 

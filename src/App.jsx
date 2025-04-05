@@ -1,17 +1,20 @@
 import React from "react";
 import "./index.css";
 
-import StarsCanvas from "./canvas/Stars";
 import Cta from "./components/Cta";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Whatsapp from "./components/Whatsapp";
 import Services from "./components/Services";
 import Tech from "./components/Tech";
 import Experience from "./components/Experience";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
-import Whatsapp from "./components/whatsapp";
+
+import Stars from "./canvas/Stars";
+
+
 
 const App = () => {
   return (
@@ -29,7 +32,7 @@ const App = () => {
       <Feedbacks />
       <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
+        <Stars/>
       </div>
     </div>
   );

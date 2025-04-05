@@ -29,7 +29,7 @@ const FeedbackCard = ({
             <span className=" bg-blue-900 rounded-2xl   ">@</span> {name}
           </p>
           <p className="mt-1 mt-mb-10px  ml-mr-5px text-blue-900 text-secondary text-[12px]">
-            {designation} of {company}
+            {designation} de {company}
           </p>
         </div>
 
