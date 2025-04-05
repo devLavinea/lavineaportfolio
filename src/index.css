@@ -122,13 +122,13 @@ body {
 }
 
 .bg-custom1 {
-  background-image: url("./assets/herobg.png");
+  
   background-size: cover;
   background-position: center;
 }
 
 .bg-custom2 {
-  background-image: url("./assets/imgcta.jpg");
+  
   background-size: cover;
   object-fit: cover;
   background-position: center;
