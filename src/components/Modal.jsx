@@ -40,7 +40,7 @@ const Project = () => {
         <div className="block">
           <div className="fixed z-30 w-full h-full bg-black opacity-80 top-0 left-0 rounded-2xl"></div>
 
-          <div className="fixed z-40 md:w-[94vw] md:h-[94vh] w-[96vw] h-[96vh] border-[#3945ef] border-2 md:top-[3vh] md:left-[2vw] top-[2vh] left-[2vw] rounded-2xl overflow-hidden">
+          <div className="fixed z-40 md:w-[94vw] md:h-[94vh] w-[96vw] h-[94vh] border-[#3945ef] border-2 md:top-[3vh] md:left-[2vw] top-[3vh] left-[2vw] rounded-2xl overflow-hidden">
             <div className="w-full h-15 bg-black border-b-2 border-[#3945ef] flex items-center justify-end div-5 rounded-t-2xl">
               <div className="flex items-center justify-between w-full md:w-[98%] text-white">
                 <a
