@@ -18,7 +18,9 @@ const FeedbackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-quaternary  rounded-3xl w-full xs:w-[320px] flex flex-col  "
   >
-    <p className="text-white h-[5vh] mt-mb-10px  ml-mr-5px font-black text-[45px]">"</p>
+    <p className="text-white h-[5vh] mt-mb-10px  ml-mr-5px font-black text-[45px]">
+      "
+    </p>
 
     <div className="ml-50px   ">
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
