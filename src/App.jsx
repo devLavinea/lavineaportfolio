@@ -4,7 +4,7 @@ import "./index.css";
 import Cta from "./components/Cta";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Whatsapp from "./components/Whatsapp.jsx";
+
 import Services from "./components/Services";
 import Tech from "./components/Tech";
 import Experience from "./components/Experience";
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div className="relative flex-col items-center justify-center z-0 bg-primary overflow-x-hidden w-full">
       <div className="bg-custom bg-cover bg-no-repeat bg-center">
-        <Whatsapp /> 
+       
         <Navbar />
         <Cta />
         <Hero />
