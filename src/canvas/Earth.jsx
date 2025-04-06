@@ -61,7 +61,7 @@ function EarthCanvas() {
         display: "block",
       }}
     >
-      <Earth />
+      <Earth/>
 
       <directionalLight
         color={0x00008b}
