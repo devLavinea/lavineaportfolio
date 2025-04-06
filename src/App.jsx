@@ -11,7 +11,7 @@ import Experience from "./components/Experience";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
-import Whatsapp from "./components/WhatsApp";
+
 import Stars from "./canvas/Stars";
 
 
@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div className="relative flex-col items-center justify-center z-0 bg-primary overflow-x-hidden w-full">
       <div className="bg-custom bg-cover bg-no-repeat bg-center">
-       <Whatsapp />
+       
         <Navbar />
         <Cta />
         <Hero />
