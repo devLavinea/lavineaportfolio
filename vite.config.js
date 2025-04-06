@@ -8,4 +8,7 @@ export default defineConfig({
   eslint:{
     ignoreDuringBuilds: true,
   },
+  build: {
+    outDir: 'build',  // ou 'dist', dependendo do seu setup
+  },
 })
