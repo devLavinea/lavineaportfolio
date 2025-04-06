@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/lavineaportfolio" element={<App />} />
         {/* <Route path="/:id" element={<Project />} /> */}
       </Routes>
     </BrowserRouter>
