@@ -33,7 +33,8 @@
     "scrollreveal": "^4.0.9",
     "swiper": "^11.2.6",
     "tailwindcss": "^4.0.15",
-    "three": "^0.174.0"
+    "three": "^0.174.0",
+    "vercel": "^41.4.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
