@@ -54,7 +54,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <div className=" h-[20vh]  " variants={textVariant()}>
+      <div className=" w-[100vw] h-[20vh]  " variants={textVariant()}>
         <p className={`${styles.sectionSubText} hidden lg:block   text-center`}>
           Potencializando soluções com as melhores ferramentas.
         </p>
@@ -63,7 +63,7 @@ const Experience = () => {
         </h2>
       </div>
 
-      <div className=" flex flex-col">
+      <div className=" w-[100vw] flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

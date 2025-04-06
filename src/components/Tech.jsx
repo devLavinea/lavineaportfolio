@@ -38,12 +38,16 @@ const Tech = () => {
   }, []);
 
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10 ">
+    <div className="flex   md:w-[100vw]  flex-row flex-wrap justify-center gap-10 ">
+      <div className="flex   md:w-[85vw]  flex-row flex-wrap justify-center gap-10 ">
+     
       {visibleTechnologies.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
           <Ball icon={technology.icon} />
         </div>
       ))}
+      </div>
+      
     </div>
   );
 };
