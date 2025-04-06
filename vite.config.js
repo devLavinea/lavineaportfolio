@@ -5,10 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),  tailwindcss()],
-  eslint:{
-    ignoreDuringBuilds: true,
-  },
-  build: {
-    outDir: 'build',  // ou 'dist', dependendo do seu setup
-  },
+  base:"/lavineaportfolio",
 })
