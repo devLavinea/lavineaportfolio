@@ -4,7 +4,7 @@ import "./index.css";
 import Cta from "./components/Cta";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Whatsapp from "./components/Whatsapp";
+import Whatsapp from "./components/Whatsapp.jsx";
 import Services from "./components/Services";
 import Tech from "./components/Tech";
 import Experience from "./components/Experience";
