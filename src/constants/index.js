@@ -28,37 +28,36 @@ export const navLinks = [
     title: "Projetos",
   },
   {
-    id: "contact",
-    title: "Contato",
-  },
-  {
     id: "services",
     title: "Serviços",
   },
-
+  {
+    id: "contact",
+    title: "Contato",
+  },
 ];
 
 const technologies = [
-   {
-     name: "HTML 5",
-     icon: html,
-   },
-   {
-     name: "CSS 3",
-     icon: css,
-   },
-   {
-     name: "JavaScript",
-     icon: javascript,
-   },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
   {
     name: "TypeScript",
     icon: typescript,
   },
-   {
-     name: "React JS",
-     icon: reactjs,
-   },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
   {
     name: "Redux Toolkit",
     icon: redux,
@@ -71,21 +70,21 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-   {
-     name: "MongoDB",
-     icon: mongodb,
-   },
-   {
-     name: "Three JS",
-     icon: threejs,
-   },
-   {
-     name: "git",
-     icon: git,
-   },
-   {
-     name: "figma",
-     icon: figma,
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
   },
   {
     name: "docker",
@@ -183,12 +182,12 @@ const testimonials = [
     name: "Ana Carolina",
     designation: "Gerente de Marketing",
     company: "Restaurante Food",
-    
+
     image: "https://randomuser.me/api/portraits/women/8.jpg",
   },
   {
     testimonial:
-     "Depois que Lavinea criou e otimizou nosso site, nosso tráfego aumentou em 50%. Não temos palavras para agradecê-la!",
+      "Depois que Lavinea criou e otimizou nosso site, nosso tráfego aumentou em 50%. Não temos palavras para agradecê-la!",
     name: "Lucas Oliveira",
     designation: "Proprietário",
     company: "Dev Burguer",
@@ -196,10 +195,10 @@ const testimonials = [
   },
   {
     testimonial:
-    "Eu nunca conheci uma desenvolvedora web que realmente se importe com o sucesso de seus clientes como a Lavinea.",
+      "Eu nunca conheci uma desenvolvedora web que realmente se importe com o sucesso de seus clientes como a Lavinea.",
     name: "Sara Felix",
     designation: "Gerente de Vendas",
-    company:"TH Consultoria",
+    company: "TH Consultoria",
     image: "https://randomuser.me/api/portraits/women/30.jpg",
   },
 ];
