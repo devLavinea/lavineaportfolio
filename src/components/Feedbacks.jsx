@@ -47,7 +47,7 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className="lg:w-[100vw] lg:h-[110vh] h-[135vh] md:h-[90vh] flex items-start justify-center">
+    <div className="mb-15px lg:w-[100vw] lg:h-[110vh] h-[135vh] md:h-[90vh] flex items-start justify-center">
       <section className=" lg:h-[100vh] h-auto md:h-[98%] w-[90vw] ml-[20px] flex flex-col px-4 py-8">
         <div
           className={`  rounded-2xl ${styles.padding} lg:min-h-[200px] min-h-[110px]`}
