@@ -73,8 +73,8 @@ const Services = () => {
           <div className="  w-full flex h-[28vh] md:h-[8vh] lg:h-[5vh]  ">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="text-[#dfd9ff] h-auto lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] "
-            >
+              className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary sm:text-[19px] text-[16px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
+              >
               Crio landing pages otimizadas, com design responsivo e foco em
               conversão. Desenvolvo portfólios personalizados, destacando
               projetos de forma criativa e profissional. Também crio soluções de
@@ -137,7 +137,7 @@ const Services = () => {
                         <h3 className="text-[20px] font-semibold">
                           {card.title}
                         </h3>
-                        <p className="text-[18px] md:text-[19px] text-[#dfd9ff]">
+                        <p className="text-[16px] md:text-[19px] text-[#dfd9ff]">
                           {card.description}
                         </p>
                         <a href={card.buttonLink} target="_blank">

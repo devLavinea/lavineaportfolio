@@ -73,7 +73,7 @@ const Works = () => {
         <div className="w-full flex lg:h-[0vh] h-[20vh] md:h-[5vh]">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
+            className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary sm:text-[19px] text-[16px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
           >
             A seguir, apresento projetos que demonstram minhas habilidades e
             experiência por meio de exemplos práticos do meu trabalho. Cada
