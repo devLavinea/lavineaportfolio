@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/:id" element={<Project />} />
-        <Route path="sitemap" element={<Sitemap />} />
+        <Route path="/sitemap" element={<Sitemap />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
