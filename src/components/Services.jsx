@@ -58,9 +58,9 @@ const Services = () => {
     <>
       <div
         id="services"
-        className="w-full    h-auto flex items-start justify-center"
+        className="w-full ml-50px  h-auto flex items-start justify-center "
       >
-        <section className="  w-[90vw] ml-[20px] flex  flex-col ">
+        <section className="  w-full  flex  flex-col ">
           <motion.div
             className="   flex  items-center "
             variants={textVariant()}
