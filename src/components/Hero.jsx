@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import  Computers  from "../canvas/Computers";
+import Computers from "../canvas/Computers";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <div className="  w-full h-full bg-custom1 opacity-5 rounded-full filter blur-xl absolute bottom-0  "></div>
 
-      <Computers/>
+      <Computers />
 
       <div className=" hidden lg:flex  absolute bottom-15 md:bottom-32 w-full  justify-center items-center">
         <a href="#work">

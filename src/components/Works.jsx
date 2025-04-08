@@ -65,10 +65,7 @@ const Works = () => {
   return (
     <div className="lg:w-[100vw] lg:h-[103vh] h-[114vh] md:h-[90vh] flex items-center justify-center">
       <section className=" lg:h-[105vh] h-[116vh] md:h-[90vh] w-[95vw] ml-[20px] flex flex-col px-4 py-8">
-        <div
-          className="w-full md:h-[18vh] h-[16vh] "
-          
-        >
+        <div className="w-full md:h-[18vh] h-[16vh] ">
           <p className={styles.sectionSubText}>Meu trabalho</p>
           <h2 className={styles.sectionHeadText}>Projetos.</h2>
         </div>
@@ -78,11 +75,10 @@ const Works = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary text-[19px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
           >
-            A seguir, apresento projetos que demonstram
-             minhas habilidades e experiência por meio de 
-             exemplos práticos do meu trabalho. Cada projeto
-              é exibido ao vivo em um frame, proporcionando uma 
-            visão clara e detalhada do meu processo e resultados.
+            A seguir, apresento projetos que demonstram minhas habilidades e
+            experiência por meio de exemplos práticos do meu trabalho. Cada
+            projeto é exibido ao vivo em um frame, proporcionando uma visão
+            clara e detalhada do meu processo e resultados.
           </motion.p>
         </div>
 

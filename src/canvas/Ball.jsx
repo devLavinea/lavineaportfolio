@@ -40,13 +40,17 @@ const Ball = React.memo((props) => {
 const BallCanvas = ({ icon }) => {
   const [scale] = useState(2.75);
 
-  const ballComponent = useMemo(() => <Ball imgUrl={icon} scale={scale} />, [
-    icon,
-    scale,
-  ]);
+  const ballComponent = useMemo(
+    () => <Ball imgUrl={icon} scale={scale} />,
+    [icon, scale]
+  );
 
   return (
-    <Canvas frameloop="demand" dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameloop="demand"
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         {ballComponent}

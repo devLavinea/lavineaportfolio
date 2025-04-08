@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 import { styles } from "../styles";
-import  Earth  from "../canvas/Earth";
+import Earth from "../canvas/Earth";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -80,7 +80,9 @@ const Contact = () => {
           variants={slideIn("left", "tween", 0.2, 1)}
           className="bg-secondary mb-15px  rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
         >
-          <p className={`pl-pr-20px ${styles.sectionSubText}`}>Entre em contato</p>
+          <p className={`pl-pr-20px ${styles.sectionSubText}`}>
+            Entre em contato
+          </p>
           <h3 className={`pl-pr-20px ${styles.sectionHeadText}`}>Contato.</h3>
 
           <form

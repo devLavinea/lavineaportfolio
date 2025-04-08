@@ -1,11 +1,7 @@
 import React from "react";
 import { styles } from "../styles";
 
-
-
 const Cta = () => {
- 
-
   return (
     <section
       id="cta"
@@ -20,7 +16,6 @@ const Cta = () => {
         </div>
 
         <div className="h-auto ">
-          
           <h1
             className={`text3d  ${styles.ctaHeadText} md:h-[16vh] md:leading-tight `}
           >

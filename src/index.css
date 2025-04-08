@@ -26,41 +26,34 @@ body {
   --xs-screen: 450px;
 }
 
-
 .ml-50px {
   margin-left: 50px;
 }
 
 .mb-15px {
   margin-bottom: 15px;
-} 
-
+}
 
 .mt-mb-10px {
-  margin-top: 10px ;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .ml-mr-5px {
   margin-left: 5px;
   margin-right: 5px;
-
 }
 .pl-pr-20px {
   padding: 1px 20px;
 }
-.pl-pr-20px{
+.pl-pr-20px {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-
-
 .pt-pb-10px {
-  padding-top: 10px ;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
-
-
 
 .text3d {
   text-shadow: 3px 3px 5px #000;
@@ -126,13 +119,11 @@ body {
 }
 
 .bg-custom1 {
-  
   background-size: cover;
   background-position: center;
 }
 
 .bg-custom2 {
-  
   background-size: cover;
   object-fit: cover;
   background-position: center;

@@ -27,7 +27,8 @@ const cardData = [
     description:
       "Landing pages focadas em resultados, com design simples, CTAs atraentes e conteúdo persuasivo, sempre visando maximizar conversões e alcançar os objetivos do cliente.",
     buttonText: "Quero uma Landing Page",
-    buttonLink: "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20uma%20Landing%20Page.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
+    buttonLink:
+      "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20uma%20Landing%20Page.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
     icon: <FaPager />,
   },
   {
@@ -36,7 +37,8 @@ const cardData = [
     description:
       "Criação de sites personalizados, incluindo portfólios, sites institucionais, sites corporativos e outros projetos. Sempre atendendo às necessidades específicas de cada cliente.",
     buttonText: "Quero um Web Site",
-    buttonLink:"https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Site%20.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações." ,
+    buttonLink:
+      "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Site%20.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
     icon: <TbWorldWww />,
   },
   {
@@ -45,7 +47,8 @@ const cardData = [
     description:
       "Criação de designs personalizados e responsivos. Meu objetivo é garantir uma experiência de usuário intuitiva e envolvente, com layouts que se adaptam a qualquer dispositivo.",
     buttonText: "Quero um Layout",
-    buttonLink: "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Layout.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
+    buttonLink:
+      "https://wa.me/5574988248014?text=Olá%20Lavinea,%20preciso%20de%20um%20Layout.%20Gostaria%20de%20discutir%20detalhes%20e%20obter%20mais%20informações.",
     icon: <MdOutlineDesignServices />,
   },
 ];
@@ -53,7 +56,10 @@ const cardData = [
 const Services = () => {
   return (
     <>
-      <div id="services" className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[133vh] flex items-start justify-center">
+      <div
+        id="services"
+        className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[133vh] flex items-start justify-center"
+      >
         <section className=" lg:h-[100vh] md:h-[103vh] h-[132vh]  w-[90vw] ml-[20px] flex  flex-col ">
           <motion.div
             className="  h-[15vh] md:h-[25vh] flex  items-center "
@@ -105,7 +111,7 @@ const Services = () => {
           >
             {cardData.map((card) => (
               <SwiperSlide key={card.id}>
-                <div  className="swiper-slide mb-15px">
+                <div className="swiper-slide mb-15px">
                   <Tilt
                     options={{
                       max: 45, // Inclinação máxima
@@ -135,9 +141,9 @@ const Services = () => {
                           {card.description}
                         </p>
                         <a href={card.buttonLink} target="_blank">
-                        <button  className="div-3 btn-default">
-                          {card.buttonText}
-                        </button>
+                          <button className="div-3 btn-default">
+                            {card.buttonText}
+                          </button>
                         </a>
                       </div>
                     </motion.div>
@@ -152,5 +158,4 @@ const Services = () => {
   );
 };
 
-// Exportando o componente About envolvido pelo SectionWrapper
 export default SectionWrapper(Services, "services");

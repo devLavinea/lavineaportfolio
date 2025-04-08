@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
-import  Ball  from "../canvas/Ball";
+import Ball from "../canvas/Ball";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const Tech = () => {
   const [visibleTechnologies, setVisibleTechnologies] = useState([]);
 
-  // Função para controlar quais tecnologias são visíveis com base no tamanho da tela
   const updateVisibleTechnologies = () => {
-    const isSmallScreen = window.innerWidth <= 768; // Exemplo de breakpoint para telas pequenas
+    const isSmallScreen = window.innerWidth <= 768;
     const filteredTechnologies = technologies.filter((tech) => {
-      // Excluir tecnologias comentadas dependendo do tamanho da tela
       if (isSmallScreen) {
         return (
           tech.name === "TypeScript" ||
@@ -18,16 +16,15 @@ const Tech = () => {
           tech.name === "Tailwind CSS" ||
           tech.name === "Node JS" ||
           tech.name === "docker"
-        ); // Somente as tecnologias não comentadas vão aparecer
+        );
       } else {
-        return true; // Em telas maiores, mostrar todas as tecnologias
+        return true;
       }
     });
 
     setVisibleTechnologies(filteredTechnologies);
   };
 
-  // Efeito para monitorar a largura da tela
   useEffect(() => {
     updateVisibleTechnologies();
     window.addEventListener("resize", updateVisibleTechnologies);
@@ -40,14 +37,12 @@ const Tech = () => {
   return (
     <div className="flex   md:w-[100vw]  flex-row flex-wrap justify-center gap-10 ">
       <div className="flex   md:w-[85vw]  flex-row flex-wrap justify-center gap-10 ">
-     
-      {visibleTechnologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <Ball icon={technology.icon} />
-        </div>
-      ))}
+        {visibleTechnologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <Ball icon={technology.icon} />
+          </div>
+        ))}
       </div>
-      
     </div>
   );
 };

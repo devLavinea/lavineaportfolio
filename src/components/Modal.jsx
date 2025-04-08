@@ -25,13 +25,11 @@ const Project = () => {
   const { id } = useParams();
   const info = data[id];
 
-  // Adicione o estado do modal
-  const [isModalOpen, setIsModalOpen] = useState(true); // Inicializa o modal como aberto
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
-  // Função para fechar o modal e voltar à página anterior
   const closeModal = () => {
-    setIsModalOpen(false); // Fecha o modal
-    window.history.back(); // Volta para a página anterior
+    setIsModalOpen(false);
+    window.history.back();
   };
 
   return (

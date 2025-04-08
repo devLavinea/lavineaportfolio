@@ -1,10 +1,10 @@
-import { 
-    EarthCanvas,
-    BallCanvas,
-    ComputersCanvas,
-    StarsCanvas,
-    CanvasLoader,
- } from "../canvas";
+import {
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+  CanvasLoader,
+} from "../canvas";
 
 import Whatsapp from "./Whatsapp";
 import Navbar from "./Navbar";
@@ -28,9 +28,9 @@ export {
   Works,
   Feedbacks,
   Contact,
-    EarthCanvas,
-    BallCanvas,
-    ComputersCanvas,
-    StarsCanvas,
-    CanvasLoader,
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+  CanvasLoader,
 };
