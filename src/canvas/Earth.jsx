@@ -77,7 +77,7 @@ function EarthCanvas() {
         enableRotate={false}
         enablePan={false}
         enableZoom={true}
-        minDistance={4}
+        minDistance={6}
         maxDistance={10}
       />
     </Canvas>

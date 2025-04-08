@@ -23,11 +23,11 @@ const FeedbackCard = ({
     </p>
 
     <div className="ml-50px   ">
-      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
+      <p className="text-white tracking-wider text-[16px]">{testimonial}</p>
 
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 mt-mb-10px  ml-mr-5px  flex flex-col">
-          <p className="text-white font-medium text-[16px]">
+          <p className="text-white font-medium text-[14px]">
             <span className=" bg-blue-900 rounded-2xl   ">@</span> {name}
           </p>
           <p className="mt-1 mt-mb-10px  ml-mr-5px text-blue-900 text-secondary text-[12px]">

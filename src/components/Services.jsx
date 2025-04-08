@@ -58,11 +58,11 @@ const Services = () => {
     <>
       <div
         id="services"
-        className="lg:w-[100vw] lg:h-[110vh] md:h-[105vh] h-[133vh] flex items-start justify-center"
+        className="w-full    h-auto flex items-start justify-center"
       >
-        <section className=" lg:h-[100vh] md:h-[103vh] h-[132vh]  w-[90vw] ml-[20px] flex  flex-col ">
+        <section className="  w-[90vw] ml-[20px] flex  flex-col ">
           <motion.div
-            className="  h-[15vh] md:h-[25vh] flex  items-center "
+            className="   flex  items-center "
             variants={textVariant()}
           >
             <h2 className={`mb-15px ${styles.sectionHeadText}`}>
@@ -70,10 +70,10 @@ const Services = () => {
             </h2>
           </motion.div>
 
-          <div className="  w-full flex h-[28vh] md:h-[8vh] lg:h-[5vh]  ">
+          <div className="  w-full flex  ">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="text-[#dfd9ff] lg:w-[60vw] mt-3 text-secondary sm:text-[19px] text-[16px] lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8vh]"
+              className="text-[#dfd9ff]  lg:w-[60vw] mt-3 text-secondary text-[18px]  lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8%]"
               >
               Crio landing pages otimizadas, com design responsivo e foco em
               conversão. Desenvolvo portfólios personalizados, destacando
