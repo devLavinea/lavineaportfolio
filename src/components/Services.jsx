@@ -58,9 +58,9 @@ const Services = () => {
     <>
       <div
         id="services"
-        className="w-full   h-auto flex items-start justify-center "
+        className="w-full   h-auto flex items-center justify-center "
       >
-        <section className="   lg:w-[93%]  flex  flex-col ">
+        <section className=" w-[95vw]   lg:w-[93%]  flex  flex-col ">
           <motion.div
             className="   flex  items-center "
             variants={textVariant()}
@@ -73,7 +73,7 @@ const Services = () => {
           <div className="   w-full flex  ">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="text-[#dfd9ff]  lg:w-[60vw] mt-3 text-secondary text-[18px]  lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8%]"
+              className="text-[#dfd9ff]   lg:w-[60vw] mt-3 text-secondary text-[18px]  lg:text-[23px] md:text-[25px]  leading-[30px] h-[8%]"
               >
               Crio landing pages otimizadas, com design responsivo e foco em
               conversão. Desenvolvo portfólios personalizados, destacando
