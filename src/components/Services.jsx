@@ -58,9 +58,9 @@ const Services = () => {
     <>
       <div
         id="services"
-        className="w-full ml-50px  h-auto flex items-start justify-center "
+        className="w-full   h-auto flex items-start justify-center "
       >
-        <section className="  w-full  flex  flex-col ">
+        <section className="   lg:w-[93%]  flex  flex-col ">
           <motion.div
             className="   flex  items-center "
             variants={textVariant()}
@@ -70,7 +70,7 @@ const Services = () => {
             </h2>
           </motion.div>
 
-          <div className="  w-full flex  ">
+          <div className="   w-full flex  ">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
               className="text-[#dfd9ff]  lg:w-[60vw] mt-3 text-secondary text-[18px]  lg:text-[23px] md:text-[25px] max-w-6xl leading-[30px] h-[8%]"

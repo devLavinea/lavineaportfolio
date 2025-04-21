@@ -75,10 +75,10 @@ const Contact = () => {
           <Earth />
         </motion.div>
 
-        {/* Formulário de contato */}
+      
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="bg-secondary mb-15px  rounded-2xl p-6 md:w-[550px] w-full" // Ajuste para largura fixa de 300px
+          className="bg-secondary mb-15px  rounded-2xl p-6 md:w-[550px] w-full" 
         >
           <p className={`pl-pr-20px ${styles.sectionSubText}`}>
             Entre em contato
